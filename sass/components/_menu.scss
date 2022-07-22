@@ -1,0 +1,33 @@
+// .menu-btn {
+//   fill: var(--secondary-text-color);
+//   background-color: transparent;
+//   border-color: transparent;
+//   cursor: pointer;
+
+//   @include transition(fill);
+
+//   &:hover,
+//   &:focus {
+//     fill: var(--logo-part-color);
+//   }
+
+//   & .menu__close-icon {
+//     display: none;
+//   }
+
+//   &.is-open .menu__close-icon {
+//     display: block;
+//   }
+
+//   &.is-open .menu__menu-icon {
+//     display: none;
+//   }
+// }
+
+// .menu-container {
+//     display: none;
+// }
+
+// .menu-container.is-open {
+//     display: block;
+// }
