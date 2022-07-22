@@ -1,0 +1,33 @@
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid $close-btn-border;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  color: #000000;
+
+  padding: 0;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: var(--logo-part-color);
+  }
+}
+
+.modal__close-icon {
+  fill: currentColor;
+  display: block;
+}

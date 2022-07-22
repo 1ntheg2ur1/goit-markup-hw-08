@@ -1,0 +1,10 @@
+.radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+  &__item:not(:first-child) {
+    margin-left: 8px;
+  }
+}

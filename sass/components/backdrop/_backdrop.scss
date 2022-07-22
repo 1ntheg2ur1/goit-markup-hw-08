@@ -1,0 +1,31 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  background-color: $backdrop-color;
+
+  opacity: 1;
+  visibility: visible;
+
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+
+  &__button {
+    margin-top: 30px;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

@@ -1,0 +1,28 @@
+
+.logo {
+  &--height {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  &__text {
+    font-family: var(--secondary-font), sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--logo-part-color);
+
+    &--white {
+      color: var(--main-color);
+    }
+
+    &--black {
+      color: $logo-bottom-color;
+    }
+  }
+
+  &--bottom {
+    display: block;
+    margin-bottom: 20px;
+  }
+}

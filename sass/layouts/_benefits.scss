@@ -1,0 +1,40 @@
+.benefits {
+  &__title {
+    @extend %visually-hidden;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    width: 270px;
+  }
+
+  &__item--left:not(:first-child) {
+    margin-left: 30px;
+  }
+
+  &__thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $benefits-background-col;
+    border-radius: 4px;
+
+    height: 120px;
+    margin-bottom: 30px;
+  }
+
+  &__icon {
+    display: block;
+  }
+
+  &__heading {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    margin-bottom: 10px;
+  }
+}

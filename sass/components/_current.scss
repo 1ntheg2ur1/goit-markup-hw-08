@@ -1,0 +1,17 @@
+.nav__link--current {
+  color: var(--logo-part-color);
+  position: relative;
+
+  &::after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 4px;
+    bottom: -1px;
+    left: 0;
+    background-color: var(--logo-part-color);
+    border-radius: 2px;
+  }
+}
