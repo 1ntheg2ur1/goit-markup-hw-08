@@ -1,13 +1,15 @@
 body {
-    font-family: var(--main-font), sans-serif;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    font-weight: var(--main-font-weight);
-    color: var(--main-text-color);
-    background-color: var(--main-color);
+  font-family: var(--main-font), sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-weight: var(--main-font-weight);
+  color: var(--main-text-color);
+  background-color: var(--main-color);
 
-    &.modal-open{
-        overflow: hidden;
+  @media screen and (max-width: 767px) {
+    &.modal-open {
+      overflow: hidden;
     }
+  }
 }
