@@ -16,13 +16,11 @@
   }
 }
 
-@media screen and (max-with: 767px) {
+@media screen and (max-width: 767px) {
   .header__container {
     position: relative;
   }
-}
 
-@media screen and (max-width: 767px) {
   .nav,
   .contacts {
     display: none;
@@ -65,21 +63,17 @@
 }
 
 .contacts {
-
   &--left {
-      margin-left: auto;
-    }
-    
+    margin-left: auto;
+  }
+
   @media screen and (max-width: 1199px) {
     margin-top: 21px;
     margin-bottom: 21px;
-
-    
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
-
   }
 }
 
@@ -93,7 +87,7 @@
   @media screen and (min-width: 768px) {
     &__link {
       display: flex;
-        align-items: center;
+      align-items: center;
       color: var(--main-text-color);
       fill: var(--main-text-color);
 

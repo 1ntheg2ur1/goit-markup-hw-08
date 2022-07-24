@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
-  <body>
+  <body data-open>
     <!--Head with navigation-->
     <header class="header">
       <div class="container header__container">
@@ -65,6 +65,93 @@
             >
           </li>
         </ul>
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav class="menu-container__nav">
+            <ul class="menu-container__list menu-container__list--left list">
+              <li class="menu-container__item menu-container__item--margin">
+                <a class="menu-container__link link" href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="menu-container__item menu-container__item--margin">
+                <a
+                  class="menu-container__link menu-container__link--current link"
+                  href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="menu-container__item menu-container__item--margin">
+                <a class="menu-container__link link" href="#contacts"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul
+            class="menu-container__contacts menu-container__contacts--margin list"
+          >
+            <li class="menu-container__contact menu-container__contact--margin">
+              <a
+                class="menu-container__contact-link link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="menu-container__contact menu-container__contact--margin">
+              <a
+                class="menu-container__contact-link menu-container__contact-link--grey link"
+                href="tel:380961111111"
+              >
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-container__contact-list list">
+            <li
+              class="menu-container__contact-item menu-container__item--margin"
+            >
+              <a class="menu-container__social-link link" href="">Twitter</a>
+            </li>
+            <li
+              class="menu-container__contact-item menu-container__item--margin"
+            >
+              <a class="menu-container__social-link link" href="">Instagram</a>
+            </li>
+            <li
+              class="menu-container__contact-item menu-container__item--margin"
+            >
+              <a class="menu-container__social-link link" href="">Facebook</a>
+            </li>
+            <li
+              class="menu-container__contact-item menu-container__item--margin"
+            >
+              <a class="menu-container__social-link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <button
+          class="menu-btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="menu__close-icon"
+              href="./images/sprite/icons.svg#close_mobile"
+            ></use>
+            <use
+              class="menu__menu-icon"
+              href="./images/sprite/icons.svg#menu_mobile"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -633,77 +720,7 @@
         </div>
       </footer>
     </main>
-    <div class="menu-container" id="menu-container" data-menu>
-      <nav class="menu-container__nav">
-        <ul class="menu-container__list menu-container__list--left list">
-          <li class="menu-container__item menu-container__item--margin">
-            <a class="menu-container__link link" href="./index.html">Студия</a>
-          </li>
-          <li class="menu-container__item menu-container__item--margin">
-            <a
-              class="menu-container__link menu-container__link--current link"
-              href="./portfolio.html"
-              >Портфолио</a
-            >
-          </li>
-          <li class="menu-container__item menu-container__item--margin">
-            <a class="menu-container__link link" href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <ul
-        class="menu-container__contacts menu-container__contacts--margin list"
-      >
-        <li class="menu-container__contact menu-container__contact--margin">
-          <a
-            class="menu-container__contact-link link"
-            href="mailto:info@devstudio.com"
-          >
-            info@devstudio.com</a
-          >
-        </li>
-        <li class="menu-container__contact menu-container__contact--margin">
-          <a
-            class="menu-container__contact-link menu-container__contact-link--grey link"
-            href="tel:380961111111"
-          >
-            +38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-      <ul class="menu-container__contact-list list">
-        <li class="menu-container__contact-item menu-container__item--margin">
-          <a class="menu-container__social-link link" href="">Twitter</a>
-        </li>
-        <li class="menu-container__contact-item menu-container__item--margin">
-          <a class="menu-container__social-link link" href="">Instagram</a>
-        </li>
-        <li class="menu-container__contact-item menu-container__item--margin">
-          <a class="menu-container__social-link link" href="">Facebook</a>
-        </li>
-        <li class="menu-container__contact-item menu-container__item--margin">
-          <a class="menu-container__social-link link" href="">LinkedIn</a>
-        </li>
-      </ul>
-    </div>
-    <button
-      class="menu-btn"
-      type="button"
-      aria-expanded="false"
-      aria-controls="menu-container"
-      data-menu-button
-    >
-      <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-        <use
-          class="menu__close-icon"
-          href="./images/sprite/icons.svg#close_mobile"
-        ></use>
-        <use
-          class="menu__menu-icon"
-          href="./images/sprite/icons.svg#menu_mobile"
-        ></use>
-      </svg>
-    </button>
     <script src="./menu.js"></script>
+    <script src="./modal.js"></script>
   </body>
 </html>

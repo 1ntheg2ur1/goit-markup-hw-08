@@ -31,6 +31,13 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  @media screen and (max-width: 1199px) {
+    &__text {
+      font-size: 12px;
+      line-height: 1.17;
+    }
+  }
+
   &__agreement {
     text-decoration-line: underline;
     color: var(--logo-part-color);
