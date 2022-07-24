@@ -18,9 +18,13 @@
   // transition-duration: 250ms;
   // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  @media screen and (max-width: 767px) {
+    width: calc(100% - 30px);
+  }
+
   @media screen and (min-width: 1200px) {
     width: 528px;
-      height: 581px;
+    height: 581px;
   }
 
   &__form-field {
@@ -40,7 +44,7 @@
     margin-bottom: 12px;
 
     @media screen and (min-width: 1200px) {
-        line-height: 1.15;
-      }
+      line-height: 1.15;
+    }
   }
 }

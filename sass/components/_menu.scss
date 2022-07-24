@@ -41,7 +41,7 @@
 
     display: flex;
     flex-direction: column;
-    padding: 46px 40px;
+    padding: 48px 40px;
     width: 100vw;
     height: 100vh;
 
@@ -86,7 +86,7 @@
       margin-bottom: 32px;
     }
 
-    &__contact--margin {
+    &__contact--margin:not(:last-child) {
       margin-bottom: 32px;
     }
   }
