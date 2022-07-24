@@ -531,10 +531,22 @@ img {
     fill: currentColor;
     margin-right: 8px;
   }
+  .contact__icon--desk-visible {
+    display: none;
+  }
+  .contact__icon--tablet-visible {
+    display: block;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contact__icon {
     margin-right: 10px;
+  }
+  .contact__icon--desk-visible {
+    display: block;
+  }
+  .contact__icon--tablet-visible {
+    display: none;
   }
 }
 

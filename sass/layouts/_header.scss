@@ -131,10 +131,27 @@
       fill: currentColor;
       margin-right: 8px;
     }
+
+    &__icon--desk-visible {
+      display: none;
+    }
+
+    &__icon--tablet-visible {
+      display: block;
+    }
   }
+
   @media screen and (min-width: 1200px) {
     &__icon {
       margin-right: 10px;
+    }
+
+    &__icon--desk-visible {
+      display: block;
+    }
+
+    &__icon--tablet-visible {
+      display: none;
     }
   }
 }
