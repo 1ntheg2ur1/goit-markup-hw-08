@@ -4,7 +4,10 @@
   &--center {
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__icon {

@@ -2,17 +2,39 @@
   display: flex;
   justify-content: center;
 
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
   &__icon {
     display: block;
     fill: currentColor;
   }
 
   &__item {
-    width: 170px;
     height: 92px;
+  }
 
-    &--right:not(:last-child) {
-      margin-right: 30px;
+  @media screen and (max-width: 767px) {
+    &__item {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__item {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__item {
+      max-width: 170px;
+
+      &--right:not(:last-child) {
+        margin-right: 30px;
+      }
     }
   }
 

@@ -26,11 +26,11 @@
     <!--Head with navigation-->
     <header class="header">
       <div class="container header__container">
+        <a class="logo logo--height link" href="./index.html"
+          ><span class="logo__text">Web</span
+          ><span class="logo__text logo__text--black">Studio</span></a
+        >
         <nav class="nav">
-          <a class="logo logo--height link" href="./index.html"
-            ><span class="logo__text">Web</span
-            ><span class="logo__text logo__text--black">Studio</span></a
-          >
           <ul class="nav__list nav__list--left list">
             <li class="nav__item nav__item--right">
               <a class="nav__link nav__link--current link" href="./index.html"
@@ -63,7 +63,72 @@
             >
           </li>
         </ul>
-        <!-- <button
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav class="menu-container__nav">
+            <ul class="menu-container__list menu-container__list--left list">
+              <li class="menu-container__item menu-container__item--margin">
+                <a
+                  class="menu-container__link menu-container__link--current link"
+                  href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="menu-container__item menu-container__item--margin">
+                <a class="menu-container__link link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="menu-container__item menu-container__item--margin">
+                <a class="menu-container__link link" href="#contacts"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul
+            class="menu-container__contacts menu-container__contacts--margin list"
+          >
+            <li class="menu-container__contact menu-container__contact--margin">
+              <a
+                class="menu-container__contact-link link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="menu-container__contact menu-container__contact--margin">
+              <a
+                class="menu-container__contact-link menu-container__contact-link--grey link"
+                href="tel:380961111111"
+              >
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-container__contact-list list">
+            <li
+              class="menu-container__contact-item menu-container__item--margin"
+            >
+              <a class="menu-container__social-link link" href="">Twitter</a>
+            </li>
+            <li
+              class="menu-container__contact-item menu-container__item--margin"
+            >
+              <a class="menu-container__social-link link" href="">Instagram</a>
+            </li>
+            <li
+              class="menu-container__contact-item menu-container__item--margin"
+            >
+              <a class="menu-container__social-link link" href="">Facebook</a>
+            </li>
+            <li
+              class="menu-container__contact-item menu-container__item--margin"
+            >
+              <a class="menu-container__social-link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <button
           class="menu-btn"
           type="button"
           aria-expanded="false"
@@ -85,7 +150,6 @@
             ></use>
           </svg>
         </button>
-        <div class="menu-container" id="menu-container" data-menu>Content</div> -->
       </div>
     </header>
 
@@ -466,73 +530,77 @@
       <!--Adress-->
       <footer class="footer">
         <div class="container footer__container">
-          <div class="adress">
-            <a class="logo logo--bottom link" href="" target="_blank"
-              ><span class="logo__text">Web</span
-              ><span class="logo__text logo__text--white">Studio</span></a
-            >
+          <div class="footer__adress-container">
+            <div class="adress-container">
+              <a class="logo logo--bottom link" href="" target="_blank"
+                ><span class="logo__text">Web</span
+                ><span class="logo__text logo__text--white">Studio</span></a
+              >
 
-            <address class="adress" id="contacts">
-              <ul class="adress__list list">
-                <li class="adress__item adress__item--bottom">
-                  <a
-                    class="adress__link adress__link--white link"
-                    href="https://goo.gl/maps/BnNHAbbFomZLCkPk6"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    г. Киев, пр-т Леси Украинки, 26</a
-                  >
+              <address class="adress" id="contacts">
+                <ul class="adress__list list">
+                  <li class="adress__item adress__item--bottom">
+                    <a
+                      class="adress__link adress__link--white link"
+                      href="https://goo.gl/maps/BnNHAbbFomZLCkPk6"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      г. Киев, пр-т Леси Украинки, 26</a
+                    >
+                  </li>
+                  <li class="adress__item adress__item--bottom">
+                    <a
+                      class="adress__link adress__link--transp link"
+                      href="mailto:info@example.com"
+                      >info@example.com</a
+                    >
+                  </li>
+                  <li class="adress__item adress__item--bottom">
+                    <a
+                      class="adress__link adress__link--transp link"
+                      href="tel:+380991111111"
+                      >+38 099 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="encourage-box">
+              <p class="encourage-box__title">Присоединяйтесь</p>
+              <ul class="social-list list">
+                <li class="social-list__item social-list__item--left">
+                  <a class="social-list__link social-list__link--white" href="">
+                    <svg class="social-list__icon" width="20" height="20">
+                      <use
+                        href="./images/sprite/icons.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="adress__item adress__item--bottom">
-                  <a
-                    class="adress__link adress__link--transp link"
-                    href="mailto:info@example.com"
-                    >info@example.com</a
-                  >
+                <li class="social-list__item social-list__item--left">
+                  <a class="social-list__link social-list__link--white" href="">
+                    <svg class="social-list__icon" width="20" height="20">
+                      <use href="./images/sprite/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="adress__item adress__item--bottom">
-                  <a
-                    class="adress__link adress__link--transp link"
-                    href="tel:+380991111111"
-                    >+38 099 111 11 11</a
-                  >
+                <li class="social-list__item social-list__item--left">
+                  <a class="social-list__link social-list__link--white" href="">
+                    <svg class="social-list__icon" width="20px" height="20px">
+                      <use href="./images/sprite/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item social-list__item--left">
+                  <a class="social-list__link social-list__link--white" href="">
+                    <svg class="social-list__icon" width="20" height="20">
+                      <use href="./images/sprite/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
-          </div>
-          <div class="encourage-box">
-            <p class="encourage-box__title">Присоединяйтесь</p>
-            <ul class="social-list list">
-              <li class="social-list__item social-list__item--left">
-                <a class="social-list__link social-list__link--white" href="">
-                  <svg class="social-list__icon" width="20" height="20">
-                    <use href="./images/sprite/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list__item social-list__item--left">
-                <a class="social-list__link social-list__link--white" href="">
-                  <svg class="social-list__icon" width="20" height="20">
-                    <use href="./images/sprite/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list__item social-list__item--left">
-                <a class="social-list__link social-list__link--white" href="">
-                  <svg class="social-list__icon" width="20px" height="20px">
-                    <use href="./images/sprite/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list__item social-list__item--left">
-                <a class="social-list__link social-list__link--white" href="">
-                  <svg class="social-list__icon" width="20" height="20">
-                    <use href="./images/sprite/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            </div>
           </div>
           <form class="subscribe-form">
             <div class="subscribe-form__thumb">
@@ -643,6 +711,6 @@
       </div>
     </div>
     <script src="./modal.js"></script>
-    <!-- <script src="./menu.js"></script> -->
+    <script src="./menu.js"></script>
   </body>
 </html>

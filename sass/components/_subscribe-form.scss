@@ -1,13 +1,31 @@
 .subscribe-form {
   display: flex;
 
-  margin-left: auto;
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__thumb {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 
   &__thumb {
     display: flex;
     flex-direction: column;
 
-    margin-right: 12px;
+    @media screen and (max-width: 1199px) {
+      align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 12px;
+    }
   }
 
   &__label {
@@ -43,7 +61,7 @@
   line-height: 1.25;
 
   height: 50px;
-  width: 358px;
+  width: 450px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -56,5 +74,9 @@
 
   &:not(:placeholder-shown) {
     color: var(--main-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
