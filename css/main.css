@@ -328,10 +328,8 @@ body {
   color: var(--main-text-color);
   background-color: var(--main-color);
 }
-@media screen and (max-width: 767px) {
-  body.modal-open {
-    overflow: hidden;
-  }
+body.modal-open {
+  overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
@@ -1593,6 +1591,7 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
+  overflow: auto;
   -webkit-transition-property: opacity, visibility;
   transition-property: opacity, visibility;
   -webkit-transition-duration: 250ms;
