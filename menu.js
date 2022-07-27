@@ -14,7 +14,7 @@
 
     mobileMenuRef.classList.toggle("is-open");
 
-    mobileOpen.classList.toggle("modal-open");
+    mobileOpen.classList.toggle("menu-open");
   });
 
 

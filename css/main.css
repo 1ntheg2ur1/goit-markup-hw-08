@@ -331,6 +331,11 @@ body {
 body.modal-open {
   overflow: hidden;
 }
+@media screen and (max-width: 767px) {
+  body.menu-open {
+    overflow: hidden;
+  }
+}
 
 @media screen and (max-width: 767px) {
   main {
