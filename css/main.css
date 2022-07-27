@@ -1642,6 +1642,8 @@ img {
 @media screen and (max-width: 767px) {
   .modal {
     width: calc(100% - 30px);
+    min-width: 320px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
