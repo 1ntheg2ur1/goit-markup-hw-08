@@ -364,6 +364,7 @@ img {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+  min-width: 320px;
 }
 @media screen and (min-width: 480px) {
   .container {
